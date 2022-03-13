@@ -1,6 +1,6 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/eokqt2deqy8gcg95?svg=true)](https://ci.appveyor.com/project/kiiyas/ahj-002-dom-sorting)
+[![Build status](https://ci.appveyor.com/api/projects/status/b5fp8n2f1q587a1g?svg=true)](https://ci.appveyor.com/project/kiiyas/ahj-003-event)
 
-[Ссылка на GitHub-Pages](https://kiiyas.github.io/AHJ-002_DOM-sorting/)
+[Ссылка на GitHub-Pages](https://kiiyas.github.io/AHJ-003_EVENT/)
 
 Гоблин появляется в рандомной ячейке на 1 секунду
 Если пользователь успел за это время кликнуть на этой точке (попробуйте сделать custom-курсор в виде молотка), то:
