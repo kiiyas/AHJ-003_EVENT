@@ -1,0 +1,99 @@
+body {
+    margin: 0;
+    padding: 0;
+    /* cursor: none; */
+    position: relative;
+    overflow: hidden;
+}
+
+.general {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-container {    
+    padding-top: 50px;
+}
+
+.game {
+    margin: auto;
+    height: 550px;
+    width: 550px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2vw;
+    }
+
+.game-cell {
+    position: relative;
+    font-size: 1vw;    
+    background: rgb(238, 225, 150);    
+}
+
+.active { 
+    background-image: url('../img/goblin.png');      
+    background-position: center;
+    -webkit-background-size: cover;
+    background-size: cover; 
+}
+
+.img {
+    margin: 0%;
+    position: absolute;    
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.cursor {
+    background-image: url('../img/cursor.png');
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;     
+    pointer-events: none;
+    position: absolute;    
+    box-sizing: border-box;
+    z-index: 99;    
+    transform: translate(-50%, -50%);
+}
+
+.animation {
+    background-size: 80px;
+}
+
+.status {
+    margin: auto;    
+    width: 550px;
+    padding-top: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+}
+
+#count {
+    margin-left: 50%;
+    color: rgb(30, 147, 30);
+}
+
+#misses {
+    margin-left: 50%;
+    color: rgb(191, 43, 43);
+}
+
+.message {
+    content: '';
+    position: absolute; 
+    width: 700px;
+    height: 150px;
+    background-color: rgb(218, 76, 76);
+    box-sizing: border-box;    
+    z-index: 10;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: double;
+    border-color: aliceblue;
+    color: antiquewhite; 
+}
