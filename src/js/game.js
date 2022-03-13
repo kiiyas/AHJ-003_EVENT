@@ -23,7 +23,7 @@ export default class Game {
     const activeCells = document.getElementsByClassName('active');
     const countField = document.getElementById('count');
     const missesField = document.getElementById('misses');
-    document.addEventListener('click', (event) => {
+    gameBoard.addEventListener('click', (event) => {
       if (event.target === activeCells[0]) {
         activeCells[0].classList.remove('active');
         this.count += 1;
@@ -35,7 +35,6 @@ export default class Game {
     });
     // запускаем гоблина
     this.goblin(activeCells, cells, boardField, gameBoard);
-    // this.finishGame(boardField, gameBoard);
   }
 
   goblin(activeCells, cells, boardField, gameBoard) {
@@ -63,7 +62,6 @@ export default class Game {
     }
     return index;
   }
-  //
 
   finishGame(boardField, gameBoard) {
     clearInterval(this.goblinInterval);
@@ -75,10 +73,10 @@ export default class Game {
     //
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Enter') {
-        general[0].removeChild(message);
-        boardField[0].removeChild(gameBoard);
         this.misses = 0;
         this.count = 0;
+        general[0].removeChild(message);
+        boardField[0].removeChild(gameBoard);
         this.buildGameBoard();
       }
     });
